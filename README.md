@@ -7,12 +7,12 @@ It extends the Lite version with full trade management features, interactive ord
 
 ## Features
 
-- Position Size Calculator – automatically calculates lot size based on selected risk %  
-- Interactive Trading Panel – one-click BUY / SELL execution  
-- Order Entry Mode – place pending orders (Buy Limit / Sell Limit) with built-in guidance  
-- Drag & Drop Levels – adjust Stop Loss, Take Profit, and Entry Price directly on the chart  
-- Fast Execution – simplified and quick trade operations  
-- Risk Management – adjustable risk percentage for safe trading  
+- Position Size Calculator - automatically calculates lot size based on selected risk %  
+- Interactive Trading Panel - one-click BUY / SELL execution  
+- Order Entry Mode - place pending orders (Buy Limit / Sell Limit) with built-in guidance  
+- Drag & Drop Levels - adjust Stop Loss, Take Profit, and Entry Price directly on the chart  
+- Fast Execution - simplified and quick trade operations  
+- Risk Management - adjustable risk percentage for safe trading  
 
 ---
 
