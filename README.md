@@ -39,7 +39,7 @@ It extends the Lite version with full trade management features, interactive ord
 4. In MT5, open the **Navigator** panel (`Ctrl+N`).  
 5. Find **Guardian Trader Pro** under *Expert Advisors*.  
 6. Drag it onto the chart and allow algorithmic trading.  
-
+<meta name="google-site-verification" content="VOqdmiQJ6lIWXCRa9ZMGk7etofGW31xSwzXXCvw5eao" />
 ---
 
 ## How to Get the Pro Version
