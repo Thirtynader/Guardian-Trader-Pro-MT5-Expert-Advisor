@@ -17,17 +17,17 @@ It extends the Lite version with full trade management features, interactive ord
 
 ## Major Updates:
 
-✨ Take Profit Integration: Both Start and Order Entry modes now include automatic Take Profit lines
-🎚️ TP Control: New input parameter to enable/disable Take Profit functionality
-📏 Smart Distance Calculation: Optimized line spacing based on symbol type (20 pips default vs 50 pips in v2.02)
-🎯 Risk:Reward Display: Real-time R:R ratio calculation and display
+✨ Take Profit Integration: Both Start and Order Entry modes now include automatic Take Profit lines.
+🎚️ TP Control: New input parameter to enable/disable Take Profit functionality.
+📏 Smart Distance Calculation: Optimized line spacing based on symbol type.
+🎯 Risk:Reward Display: Real-time R:R ratio calculation and display.
 
 Technical Improvements:
 
-Reduced default pip distance from 50 to 20 pips for better visibility
-Symbol-specific distance calculations for different asset classes
-Enhanced info display with Risk:Reward metrics
-Better handling of Take Profit in all order types
+• Reduced default pip distance from 50 to 20 pips for better visibility
+• Symbol-specific distance calculations for different asset classes
+• Enhanced info display with Risk:Reward metrics
+• Better handling of Take Profit in all order types
 
 ---
 
@@ -37,7 +37,7 @@ Better handling of Take Profit in all order types
 ![Guardian Trader Pro Screenshot 2](Screenshot-GTPro2.jpg)  
 ![Guardian Trader Pro Screenshot 2](Screenshot-GTPro3.jpg)
 Updates:
-![Guardian Trader Pro Screenshot 2](Screenshot-GTPro4.jpg)
+![Guardian Trader Pro Screenshot 2](GTPro4.jpg)
 
 ---
 
