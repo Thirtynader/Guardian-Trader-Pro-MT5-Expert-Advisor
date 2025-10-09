@@ -22,7 +22,7 @@ It extends the Lite version with full trade management features, interactive ord
 📏 Smart Distance Calculation: Optimized line spacing based on symbol type.
 🎯 Risk:Reward Display: Real-time R:R ratio calculation and display.
 
-Technical Improvements:
+## Technical Improvements:
 
 • Reduced default pip distance from 50 to 20 pips for better visibility
 • Symbol-specific distance calculations for different asset classes
@@ -48,7 +48,7 @@ Updates:
 
 ---
 
-📖 How to Use
+## How to Use
 Quick Start Guide
 Method 1: Market Execution (Start Mode)
 
