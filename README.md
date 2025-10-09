@@ -18,9 +18,13 @@ It extends the Lite version with full trade management features, interactive ord
 ## Major Updates:
 
 ✨ Take Profit Integration: Both Start and Order Entry modes now include automatic Take Profit lines.
+
 🎚️ TP Control: New input parameter to enable/disable Take Profit functionality.
+
 📏 Smart Distance Calculation: Optimized line spacing based on symbol type.
+
 🎯 Risk:Reward Display: Real-time R:R ratio calculation and display.
+
 
 ## Technical Improvements:
 
