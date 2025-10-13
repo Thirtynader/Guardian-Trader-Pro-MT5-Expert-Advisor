@@ -1,6 +1,6 @@
 Guardian Trader Pro Edition
-![Guardian Trader Pro Screenshot 1](Screenshot-GT-New-01)  
-![Guardian Trader Pro Screenshot 2](Screenshot-GT-New-02)  
+![Guardian Trader Pro Screenshot 1](Screenshot-GT-New-01.png)  
+![Guardian Trader Pro Screenshot 2](Screenshot-GT-New-02.png)  
 
 
 📋 OverviewGuardian Trader Pro is a powerful trading assistant that helps you manage risk precisely by calculating optimal lot sizes based on your stop loss and risk percentage. With a modern, intuitive interface, it simplifies position sizing and trade execution.✨ Key Features
