@@ -2,15 +2,10 @@ Guardian Trader Pro Edition
 ![Guardian Trader Pro Screenshot 1](Screenshot-GT-215-01.png)  
 ![Guardian Trader Pro Screenshot 2](Screenshot-GT-New-02.png)  
 
-
+# Guardian Trader Pro - MetaTrader 5 Expert Advisor
 ## 📋 Overview
 
 Guardian Trader Pro is a powerful trading assistant that helps you manage risk precisely by calculating optimal lot sizes based on your stop loss and risk percentage. With a modern, intuitive interface, it simplifies position sizing and trade execution.
-
-# Guardian Trader Pro - MetaTrader 5 Expert Advisor
-
-## 🎯 Overview
-Guardian Trader Pro is a professional money management expert advisor for MetaTrader 5 with an advanced visual interface for precise risk management and trade execution.
 
 ---
 
