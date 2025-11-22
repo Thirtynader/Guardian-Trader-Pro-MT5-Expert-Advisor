@@ -1,6 +1,6 @@
 Guardian Trader Pro Edition
 ![Guardian Trader Pro Screenshot 1](Screenshot-GT-215-01.png)  
-![Guardian Trader Pro Screenshot 2](Screenshot-GT-New-02.png)  
+![Guardian Trader Pro Screenshot 2](Screenshot-GT-215-02.png)  
 
 # Guardian Trader Pro - MetaTrader 5 Expert Advisor
 ## 📋 Overview
