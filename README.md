@@ -1,575 +1,489 @@
-Guardian Trader Pro Edition
+## Guardian Trader Pro Edition
+Professional Money Management & Trading Tool for MetaTrader 5
 
-![Guardian Trader Pro Screenshot 1](Screenshot-GT-215-01.png)  
-![Guardian Trader Pro Screenshot 2](Screenshot-GT-215-02.png)  
+![Guardian Trader Pro Screenshot 1](Screenshot-GT218.jpg)  
 
-Live market testing
-
-![Guardian Trader Pro Screenshot 2](Screenshot-GT-215-03.png)
-
-# Guardian Trader Pro - MetaTrader 5 Expert Advisor
 ## 📋 Overview
 
-Guardian Trader Pro is a powerful trading assistant that helps you manage risk precisely by calculating optimal lot sizes based on your stop loss and risk percentage. With a modern, intuitive interface, it simplifies position sizing and trade execution.
-
----
-
-## 📊 Version History
-
-### **v2.15 (Latest) - Major Update**
-**Release Date:** November 2024
-
-#### 🆕 New Features Added:
-
-1. **Buy Stop / Sell Stop Orders**
-   - Full support for breakout trading strategies
-   - Buy Stop button (Teal color) - Order above current price
-   - Sell Stop button (Purple color) - Order below current price
-   - Automatic price validation and freeze level checking
-
-2. **Break Even Function**
-   - One-click "Break Even" button
-   - Automatically moves Stop Loss to entry price for all open positions
-   - Only affects positions currently in profit
-   - Individual position status reporting
-   - Color: Purple
-
-3. **Close All Positions**
-   - Emergency close all button
-   - Closes all open positions for current symbol with one click
-   - Real-time position count feedback
-   - Color: Red (for safety awareness)
-
-4. **Live Statistics Display**
-   - **Position Counter**: Shows total positions with Buy/Sell breakdown
-     - Format: `Positions: 3 (B:2 S:1)`
-   - **Profit/Loss Display**: Real-time P/L in both $ and %
-     - Format: `P/L: $125.50 (2.51%)`
-     - Dynamic color coding:
-       - 🟢 Green for profit
-       - 🔴 Red for loss
-       - ⚪ Gray for break-even
-   - Updates every second via timer
-
-5. **Enhanced UI Layout**
-   - Reorganized button placement for better workflow
-   - Info section moved below order buttons for better visibility
-   - Increased panel height (720px) to accommodate new features
-   - Improved spacing between elements
-
-6. **Text Wrapping System**
-   - Long text automatically wraps to next line
-   - Prevents text overflow from display boxes
-   - Supports up to 4 lines of information
-   - 26 characters per line limit with smart word breaking
-
----
-
-### **v2.14 (Previous)**
-**Base Features:**
-
-1. **Core Money Management**
-   - Dynamic lot size calculation based on risk percentage
-   - Stop Loss and Entry price line management
-   - Take Profit line with customizable Risk:Reward ratio
-   - Real-time lot size updates when moving price lines
-
-2. **Order Types**
-   - Market Orders: Buy / Sell
-   - Pending Orders: Buy Limit / Sell Limit
-   - Order Entry mode for pending orders
-
-3. **Visual Interface**
-   - Modern dark theme UI
-   - Draggable price lines on chart
-   - Color-coded lines (SL: Red, Entry: Gold, TP: Green)
-   - Scalable UI (0.5x to 2.0x)
-   - 4 position presets (Top Left/Right, Bottom Left/Right)
-
-4. **Risk Management**
-   - Adjustable risk percentage (0.1% - 50%)
-   - Account balance protection
-   - Automatic volume normalization
-   - Freeze level compliance
-
----
-
-## 🔄 Key Improvements from v2.14 to v2.15
-
-| Feature | v2.14 | v2.15 |
-|---------|-------|-------|
-| **Order Types** | Buy/Sell, Buy Limit/Sell Limit | ✅ + Buy Stop/Sell Stop |
-| **Position Management** | Manual only | ✅ + Break Even Button |
-| **Emergency Close** | Close individually | ✅ + Close All Positions |
-| **Statistics** | None | ✅ Live Positions & P/L Display |
-| **Text Display** | Fixed, could overflow | ✅ Smart word wrapping |
-| **UI Height** | 540px | 720px (more space) |
-| **Auto Updates** | None | ✅ Timer updates every second |
-| **Status Feedback** | Basic | ✅ Enhanced with icons & colors |
-
----
-
-## 📸 Screenshots
-
-### New Features in v2.15:
-
-```
-┌─────────────────────────────┐
-│   GUARDIAN TRADER PRO       │
-│   v2.15                     │
-├─────────────────────────────┤
-│ Risk: [1.0] %               │
-├─────────────────────────────┤
-│     START SETUP             │
-│     CLEAR ALL               │
-├─────────────────────────────┤
-│   [BUY]      [SELL]         │
-├─────────────────────────────┤
-│     ORDER ENTRY             │
-│ [BUY LIMIT] [SELL LIMIT]    │
-│ [BUY STOP]  [SELL STOP] ⭐  │
-├─────────────────────────────┤
-│   🆕 BREAK EVEN             │
-│   🆕 CLOSE ALL POSITIONS    │
-├─────────────────────────────┤
-│ 📊 STATS (Updates Live):    │
-│ Positions: 3 (B:2 S:1)      │
-│ P/L: $125.50 (2.51%) 🟢     │
-├─────────────────────────────┤
-│ ℹ️ INFO:                    │
-│ Lot Size: 0.15              │
-│ SL: 50 pips | TP: 100       │
-│ Ready to Execute ✅         │
-└─────────────────────────────┘
-```
-
----
-
-## 🚀 Installation
-
-1. Download `GuardianTraderPro_v2.15.mq5`
-2. Place file in: `MetaTrader 5/MQL5/Experts/`
-3. Restart MetaTrader 5
-4. Drag EA onto any chart
-5. Enable "AutoTrading" button
-
----
-
-## 📖 User Guide
-
-### Getting Started
-
-#### 1. **Market Orders (Buy/Sell)**
-   - Click `START SETUP`
-   - Adjust Entry line (Gold) and Stop Loss line (Red)
-   - Lot size auto-calculates based on your risk %
-   - Click `BUY` or `SELL` to execute
-
-#### 2. **Pending Orders - Limit**
-   - Click `ORDER ENTRY`
-   - Adjust Order Price line (Blue) and Stop Loss line (Red)
-   - Lot size updates automatically
-   - Click `BUY LIMIT` (price below market) or `SELL LIMIT` (price above market)
-
-#### 3. **Pending Orders - Stop (NEW)**
-   - Click `ORDER ENTRY`
-   - Adjust Order Price line (Blue) and Stop Loss line (Red)
-   - Lot size updates automatically
-   - Click `BUY STOP` (price above market) or `SELL STOP` (price below market)
-   - Perfect for breakout strategies
-
-#### 4. **Break Even (NEW)**
-   - Works on positions already in profit
-   - Click `BREAK EVEN` button
-   - Moves all Stop Loss to entry price (zero risk)
-   - Protects profits automatically
-
-#### 5. **Close All Positions (NEW)**
-   - Emergency exit button
-   - Click `CLOSE ALL POSITIONS`
-   - Closes all open positions for current symbol
-   - Use when market moves against you
-
----
-
-## ⚙️ Settings
-
-### Input Parameters:
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `StopLossColor` | Red | SL line color |
-| `EntryLineColor` | Gold | Entry line color |
-| `OrderPriceColor` | Blue | Order price line color |
-| `TakeProfitColor` | Green | TP line color |
-| `LineWidth` | 3 | Thickness of lines |
-| `EnableTakeProfit` | true | Show TP line |
-| `DefaultRiskReward` | 1.0 | Default R:R ratio |
-| `UIScale` | 1.0 | UI size (0.5 - 2.0) |
-| `UIPosition` | Top Right | Panel position |
-
----
-
-## 🎨 Color Scheme
-
-### Buttons:
-- **Green**: START SETUP, BUY
-- **Red**: CLEAR ALL, SELL, CLOSE ALL
-- **Orange**: ORDER ENTRY
-- **Blue**: BUY LIMIT
-- **Pink**: SELL LIMIT
-- **Teal**: BUY STOP (New)
-- **Purple**: SELL STOP, BREAK EVEN (New)
-
-### Status Colors:
-- **Green** 🟢: Profit / Ready to execute
-- **Red** 🔴: Loss / Error
-- **Yellow** 🟡: Warning / Active setup
-- **Gray** ⚪: Idle / Break-even
-
----
-
-## 🛡️ Safety Features
-
-1. **Freeze Level Check**: Prevents orders too close to market
-2. **Volume Validation**: Auto-adjusts to broker min/max/step
-3. **Price Normalization**: Rounds to valid tick size
-4. **Balance Protection**: Risk % limits (0.1% - 50%)
-5. **Position Filtering**: Only affects current symbol
-
----
-
-## 💡 Pro Tips
-
-1. **Use Break Even** when price moves 1:1 in your favor
-2. **Buy/Sell Stop** is perfect for NFP, news breakouts
-3. **Monitor P/L Display** for real-time performance
-4. **Adjust Risk %** based on market volatility
-5. **Use Close All** during high-impact news if worried
-
----
-
-## 🔧 Technical Details
-
-- **Platform**: MetaTrader 5
-- **Language**: MQL5
-- **UI Framework**: Custom graphical objects
-- **Update Frequency**: 1 second (stats)
-- **Magic Number**: 123456
-- **Compatible**: All symbols (Forex, Metals, Indices, Crypto)
-
----
-
-## 📜 Changelog
-
-### v2.15 (Current)
-- ✅ Added Buy Stop / Sell Stop orders
-- ✅ Added Break Even button
-- ✅ Added Close All Positions button
-- ✅ Added live position counter
-- ✅ Added real-time P/L display with % and color coding
-- ✅ Improved text wrapping system
-- ✅ Enhanced UI layout and spacing
-- ✅ Increased panel height to 720px
-- ✅ Added timer for auto-updates
-
-### v2.14
-- Info section moved below order buttons
-- Text wrapping for long descriptions
-- Improved font sizes and spacing
-- Risk input field enhanced
-
-### v2.13
-- Initial public release
-- Core money management features
-- Visual price line system
-- Buy/Sell and Limit orders
-
----
-
-## ⚖️ License
-
-Copyright 2025 Thirtynader. All rights reserved.
-
----
-
-## ⭐ If you find this EA useful, please star the repository!
-
----
-
-**Made with 💙 for the trading community**
+Guardian Trader Pro is an advanced trading expert for professional money management and trade execution in MetaTrader 5. This tool helps you manage your trades with precision by automatically calculating position sizes based on your risk percentage.
 
 ## ✨ Key Features
 
- • Smart Lot Size Calculator - Automatically calculates position size based on your risk percentage and stop loss distance
- 
- • Dual Trading Modes:
- 
-      • Market Execution - Instant Buy/Sell orders
-      • Pending Orders - Buy/Sell Limit orders
-      
- • Visual Setup - Drag-and-drop price lines for Entry, Stop Loss, and Take Profit
- 
- • Risk/Reward Display - Real-time calculation of SL, TP distances and R:R ratio
- 
- • Customizable UI - Scalable interface (0.5x - 2x) with adjustable positioning
- 
- • Multi-Asset Support - Optimized for Forex, Gold, Silver, Oil, Indices (US30, NAS100, SPX)
- 
- • Take Profit Management - Optional TP line with customizable risk/reward ratio
- 
- • Real-time Updates - Lot size recalculates instantly when you move lines
- 
- • Sound Alerts - Audio feedback for actions and confirmations
- 
- 
-## 📥 Installation
+📊 Automatic Lot Calculation based on risk percentage
 
- Step 1: Download the File
- 
-After purchase, you will receive the Guardian Trader Pro.ex5 file via email.
+🎯 Fast Trade Execution (Buy/Sell Market Orders)
 
- Step 2: Install in MetaTrader 5
- 
- 
- • Option A: Automatic Installation
- 
-Double-click the Guardian Trader Pro.ex5 file
+📝 All Pending Order Types (Buy/Sell Limit & Stop)
 
-MetaTrader 5 will open automatically
+🎨 Modern Customizable UI with multiple themes
 
-Confirm the installation prompt
+🔄 Partial Position Closing with custom percentage
 
+⚡ One-Click Break Even for all positions
 
-• Option B: Manual Installation
+📈 Live Statistics Display for P/L and positions
 
-Open MetaTrader 5
+🌍 Trading Session Display with spread monitoring
 
-Click File → Open Data Folder
+🔊 Sound Alerts (optional)
 
-Navigate to: MQL5 → Experts
+🎛️ Scalable UI (0.5x to 2x)
 
-Copy Guardian Trader Pro.ex5 into the Experts folder
 
-Restart MetaTrader 5 or press F5 in Navigator
+## 🚀 Installation
 
+• Copy the .ex5 file to:
 
-Step 3: Attach to Chart
+    MetaTrader 5/MQL5/Experts/
 
-Open Navigator panel (Ctrl+N)
+• Restart MetaTrader 5
+• Drag the expert from Navigator to your chart
+• Configure your preferred settings and click OK
 
-Expand Expert Advisors section
+## 📖 User Guide
 
-Find Guardian Trader Pro
+1️⃣ Setting Your Risk
 
-Drag and drop onto any chart
+Enter your desired risk percentage in the Risk field (typically 1-2%)
 
+Text color changes based on risk level:
 
-In the settings window:
+• White: up to 2%
 
-    • Go to Common tab
-    
-    • Enable Allow Algo Trading
-    
-    • Click OK
-    
+• Yellow: 2-5%
 
-Step 4: Verify Installation
+• Orange: 5-10%
 
-The Guardian Trader panel appears on your chart
+• Red: above 10%
 
-Check the Experts tab in Terminal for confirmation message
 
-You should see: "Guardian Trader Pro - Modern Edition Ready!"
 
 
-## 🎯 How to Use
+2️⃣ Market Orders
 
-Method 1: Market Orders (Instant Execution)
+Step 1: Click the START SETUP button
 
-1- Start Setup
+Step 2: Three lines appear on the chart:
 
-    • Click the START SETUP button
-    
-    • Three lines appear: Entry (Gold), Stop Loss (Red), Take Profit (Green)
-    
-2- Adjust Your Levels
+🟡 Entry (Gold): Entry price
 
-    • Drag the Entry Line to your desired entry price
-    
-    • Drag the Stop Loss line to set your risk level
-    
-    • Drag the Take Profit line to set your target (optional)
-    
-3- Set Risk Percentage
+🔴 Stop Loss (Red): Your stop loss level
 
-    • Click on the risk input field (default 1%)
-    
-    • Enter your desired risk (0.1% to 50%)
-    
-    • Press Enter to confirm
-    
-4- Review Information
+🟢 Take Profit (Green): Your take profit target
 
-    • Check the calculated lot size
-    
-    • Review SL distance in pips
-    
-    • Verify Risk/Reward ratio
-    
-5- Execute Trade
 
-    • Click BUY for long positions
-    
-    • Click SELL for short positions
-    
-    • Trade executes instantly at market price
-    
+Step 3: Drag the lines to your desired levels
 
+Step 4: Position size is calculated automatically
 
-Method 2: Pending Orders (Limit Orders)
+Step 5: Click BUY or SELL to execute
 
-1- Start Order Entry
+3️⃣ Pending Orders
 
-    • Click the ORDER ENTRY button
-    
-    • Three lines appear: Order Price (Blue), Stop Loss (Red), Take Profit (Green)
-    
-3- Position Your Orders
 
-    • Drag Order Price line to your desired entry level
-    
-    • Drag Stop Loss below Order Price for Buy Limit (above for Sell Limit)
-    
-    • Drag Take Profit to your target level
-    
-4- Set Risk & Review
+Step 1: Click the ORDER ENTRY button
 
-    • Adjust risk percentage if needed
-    
-    • Check lot size calculation
-    
-    • Verify all price levels
-    
-3- Place Order
+Step 2: Three lines appear:
 
-    • Click BUY LIMIT (order price must be below current price)
-    
-    • Click SELL LIMIT (order price must be above current price)
-    
-    • Order is placed and will execute when price reaches your level
-    
 
+🔵 Order Price (Blue): Pending order price
 
-## Additional Functions
+🔴 Stop Loss (Red)
 
-  • CLEAR ALL - Removes all lines and resets the setup
-  
-  • Risk Input - Accepts decimal values (e.g., 0.5, 1.5, 2.0)
-  
-  • Line Dragging - Lot size updates automatically as you move lines
-  
-## ⚙️ Configuration
+🟢 Take Profit (Green)
 
-// Risk Management
 
-input double DefaultRiskReward = 1.0;     // Default R:R ratio
+Step 3: Adjust the lines to your levels
 
-input bool EnableTakeProfit = true;       // Show TP line
+Step 4: Select one of the following:
 
 
-// Visual Settings
+• BUY LIMIT: Buy below current price
 
-input double UIScale = 1.0;               // UI size (0.5 - 2.0)
+• SELL LIMIT: Sell above current price
 
-input UI_POSITION UIPosition = UI_TOP_RIGHT;
+• BUY STOP: Buy above current price
 
+• SELL STOP: Sell below current price
 
-// Line Colors & Style
 
-input color StopLossColor = clrCrimson;
+4️⃣ Position Management
+Partial Close
 
-input color EntryLineColor = clrGold;
+Enter the desired percentage (e.g., 50)
 
-input color OrderPriceColor = clrDodgerBlue;
+Click the CLOSE button
 
-input color TakeProfitColor = clrLimeGreen;
+The specified percentage of all positions will be closed
 
-input int LineWidth = 3;
 
+Break Even
 
-// Theme
 
-input color UIThemeColor = C'25,35,55';   // Dark Blue
+Click BREAK EVEN
 
-input color UIAccentColor = C'58,123,213'; // Bright Blue
+Stop Loss of all profitable positions moves to entry price
 
 
-## 🎨 Interface Customization
+Close All
 
-UI Positions:
+Click CLOSE ALL POSITIONS
 
-    • Top Left
-    
-    • Top Right (default)
-    
-    • Bottom Left
-    
-    • Bottom Right
-    
-    • Custom
-    
-Scaling: Adjust UIScale from 0.5 (compact) to 2.0 (large) for different screen sizes
+All positions for the current symbol will be closed
 
 
-## 💡 Tips
+5️⃣ Clear Lines
 
 
-  • Optimal Distances: The EA automatically suggests optimal pip distances based on the asset type
-  
-  • Risk Management: Start with 1% risk and adjust based on your strategy
-  
-  • Multi-Timeframe: Works on all timeframes (M1 to MN)
-  
-  • Precision: Lot size follows broker's minimum/maximum lot and step size
-  
-  • One Chart: Only attach to one chart at a time for best performance
-  
+Click CLEAR ALL button
 
-## ⚠️ Requirements
+All lines are removed from the chart
 
 
-  • MetaTrader 5 platform (build 2000+)
-  
-  • Active trading account (demo or live)
-  
-  • Algo Trading must be enabled
-  
-  • Internet connection
-  
+## ⚙️ Customizable Settings
 
-## 💰 Purchase
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left;">Parameter</th>
+      <th style="text-align:center;">Default</th>
+      <th style="text-align:left;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>DefaultRiskReward</code></td>
+      <td style="text-align:center;">1.0</td>
+      <td>Risk to Reward ratio</td>
+    </tr>
+    <tr>
+      <td><code>UIScale</code></td>
+      <td style="text-align:center;">1.0</td>
+      <td>UI scale factor (0.5 - 2.0)</td>
+    </tr>
+    <tr>
+      <td><code>UIPosition</code></td>
+      <td style="text-align:center;">Top Right</td>
+      <td>Panel position on chart</td>
+    </tr>
+    <tr>
+      <td><code>EnableTakeProfit</code></td>
+      <td style="text-align:center;">true</td>
+      <td>Enable/Disable Take Profit lines</td>
+    </tr>
+    <tr>
+      <td><code>EnableSoundAlerts</code></td>
+      <td style="text-align:center;">true</td>
+      <td>Enable/Disable sound alerts</td>
+    </tr>
+    <tr>
+      <td><code>LineWidth</code></td>
+      <td style="text-align:center;">3</td>
+      <td>Line thickness</td>
+    </tr>
+  </tbody>
+</table>
 
-  • Price: $50 USD
-  
-  • This is commercial software. To purchase:
-  
+
+💡 Important Tips
+
+
+✅ Always test on a demo account first
+
+✅ Start with low risk percentage (1-2%)
+
+✅ Verify the calculated lot size before executing
+
+✅ High spread is shown in red color
+
+✅ Current trading session is displayed in the panel
+
+
+## 💰 Purchase & Support
+
+Price: $50 (One-time payment)
+
+Benefits:
+
+✅ Free lifetime support
+
+✅ Free updates forever
+
+✅ Installation assistance
+
+
+## Contact:
+
+
 📧 Email: Thirtynader@gmail.com
 
-  • You will receive:
-  
-    1- Payment instructions
-    
-    2- Compiled EX5 file (ready to use)
-    
-    3- Installation guide
-    
-    4- Full support
-    
-
-## 🔒 Note
-
-This repository contains only the source code for reference. The compiled EA (EX5 file) is required to run on MetaTrader 5 and must be purchased.
 
 
-Developed by Thirtynader
+## 🔄 Version History
+v2.18 (Current)
+
+Improved lot size calculations
+
+Fixed compiler warnings
+
+UI optimization
+
+
+<div align="center">
+Made with ❤️ by Thirtynader
+⭐ If you love Guardian Trader Pro, give us a star!
+</div>
+
+
+## ---------پارسی-----------
+
+##📋 معرفی
+
+Guardian Trader Pro یک اکسپرت معاملاتی پیشرفته برای مدیریت حرفه‌ای سرمایه و اجرای معاملات در متاتریدر 5 است. این ابزار به شما کمک می‌کند تا با محاسبه خودکار حجم معاملات بر اساس درصد ریسک، معاملات خود را با دقت بالا مدیریت کنید.
+
+✨ امکانات کلیدی
+
+📊 محاسبه خودکار لات بر اساس درصد ریسک
+
+🎯 اجرای سریع معاملات (Buy/Sell Market)
+
+📝 انواع دستورات معلق (Buy/Sell Limit & Stop)
+
+🎨 رابط کاربری مدرن و قابل تنظیم
+
+🔄 بستن جزئی معاملات با درصد دلخواه
+
+⚡ انتقال به Break Even با یک کلیک
+
+📈 نمایش آمار زنده سود/زیان و پوزیشن‌ها
+
+🌍 نمایش سشن معاملاتی و اسپرد
+
+🔊 هشدارهای صوتی قابل تنظیم
+
+🎛️ مقیاس‌پذیری UI (0.5x تا 2x)
+
+
+
+## 🚀 نصب و راه‌اندازی
+
+
+فایل .ex5 را در پوشه زیر کپی کنید:
+
+
+MetaTrader 5/MQL5/Experts/
+
+
+MetaTrader را ری‌استارت کنید
+
+از منوی Navigator، اکسپرت را روی چارت بکشید
+
+تنظیمات دلخواه را اعمال کنید و OK بزنید
+
+
+## 📖 راهنمای استفاده
+
+1️⃣ تنظیم ریسک
+
+
+در کادر Risk درصد ریسک مورد نظر (معمولاً 1-2%) را وارد کنید
+
+رنگ متن بر اساس میزان ریسک تغییر می‌کند:
+
+
+سفید: تا 2%
+
+زرد: 2-5%
+
+نارنجی: 5-10%
+
+قرمز: بالای 10%
+
+
+
+
+2️⃣ معاملات بازاری (Market Orders)
+
+مرحله 1: روی دکمه START SETUP کلیک کنید
+
+مرحله 2: سه خط روی چارت ظاهر می‌شود:
+
+
+🟡 Entry (طلایی): قیمت ورود
+
+🔴 Stop Loss (قرمز): حد ضرر
+
+🟢 Take Profit (سبز): حد سود
+
+
+مرحله 3: خطوط را به نقاط دلخواه بکشید
+
+مرحله 4: حجم معامله خودکار محاسبه می‌شود
+
+مرحله 5: روی BUY یا SELL کلیک کنید
+
+3️⃣ دستورات معلق (Pending Orders)
+
+مرحله 1: روی دکمه ORDER ENTRY کلیک کنید
+
+مرحله 2: سه خط ظاهر می‌شود:
+
+
+🔵 Order Price (آبی): قیمت دستور
+
+🔴 Stop Loss (قرمز)
+
+🟢 Take Profit (سبز)
+
+
+مرحله 3: خطوط را تنظیم کنید
+
+مرحله 4: یکی از دکمه‌های زیر را انتخاب کنید:
+
+
+BUY LIMIT: خرید زیر قیمت فعلی
+
+SELL LIMIT: فروش بالای قیمت فعلی
+
+BUY STOP: خرید بالای قیمت فعلی
+
+SELL STOP: فروش زیر قیمت فعلی
+
+
+4️⃣ مدیریت پوزیشن‌ها
+
+بستن جزئی (Partial Close)
+
+
+درصد مورد نظر (مثلاً 50) را وارد کنید
+
+روی دکمه CLOSE کلیک کنید
+
+درصد مشخص شده از همه پوزیشن‌ها بسته می‌شود
+
+
+Break Even
+
+
+روی BREAK EVEN کلیک کنید
+
+Stop Loss همه معاملات سودده به نقطه ورود منتقل می‌شود
+
+
+بستن همه
+
+
+روی CLOSE ALL POSITIONS کلیک کنید
+
+تمام پوزیشن‌های سیمبل فعلی بسته می‌شوند
+
+
+5️⃣ پاک کردن خطوط
+
+
+روی دکمه CLEAR ALL کلیک کنید
+
+تمام خطوط از چارت پاک می‌شوند
+
+
+## ⚙️ تنظیمات قابل شخصی‌سازی
+
+<div dir="rtl">
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:right;">پارامتر</th>
+      <th style="text-align:center;">پیش‌فرض</th>
+      <th style="text-align:right;">توضیحات</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>DefaultRiskReward</code></td>
+      <td style="text-align:center;">1.0</td>
+      <td>نسبت ریسک به ریوارد</td>
+    </tr>
+    <tr>
+      <td><code>UIScale</code></td>
+      <td style="text-align:center;">1.0</td>
+      <td>مقیاس رابط کاربری (0.5 - 2.0)</td>
+    </tr>
+    <tr>
+      <td><code>UIPosition</code></td>
+      <td style="text-align:center;">Top Right</td>
+      <td>موقعیت پنل روی چارت</td>
+    </tr>
+    <tr>
+      <td><code>EnableTakeProfit</code></td>
+      <td style="text-align:center;">true</td>
+      <td>فعال/غیرفعال کردن خطوط حد سود</td>
+    </tr>
+    <tr>
+      <td><code>EnableSoundAlerts</code></td>
+      <td style="text-align:center;">true</td>
+      <td>فعال/غیرفعال کردن هشدار صوتی</td>
+    </tr>
+    <tr>
+      <td><code>LineWidth</code></td>
+      <td style="text-align:center;">3</td>
+      <td>ضخامت خطوط</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+💡 نکات مهم
+
+
+✅ همیشه ابتدا روی حساب دمو تست کنید
+
+✅ از درصد ریسک پایین شروع کنید (1-2%)
+
+✅ قبل از اجرای معامله، حجم محاسبه شده را بررسی کنید
+
+✅ اسپرد بالا با رنگ قرمز نمایش داده می‌شود
+
+✅ سشن معاملاتی فعلی در پنل نمایش داده می‌شود
+
+
+## 💰 خرید و پشتیبانی
+قیمت: $50 (یکبار پرداخت)
+
+مزایا:
+
+
+✅ پشتیبانی رایگان مادام‌العمر
+
+✅ آپدیت‌های رایگان برای همیشه
+
+✅ نصب و راه‌اندازی
+
+
+## تماس با ما:
+
+
+📧 Email: Thirtynader@gmail.com
+
+
+
+
+🔄 تاریخچه نسخه‌ها
+
+v2.18 (فعلی)
+
+
+بهبود محاسبات لات‌سایز
+
+رفع اخطارهای کامپایلر
+
+بهینه‌سازی رابط کاربری
+
+
+
+<div align="center">
+ساخته شده با ❤️ توسط Thirtynader
+⭐ اگر Guardian Trader Pro را دوست دارید، یک ستاره به ما بدهید!
+</div>
