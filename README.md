@@ -224,7 +224,6 @@ v2.18 (Current)
 
 Improved lot size calculations
 
-Fixed compiler warnings
 
 UI optimization
 
@@ -477,7 +476,6 @@ v2.18 (فعلی)
 
 بهبود محاسبات لات‌سایز
 
-رفع اخطارهای کامپایلر
 
 بهینه‌سازی رابط کاربری
 
