@@ -3,6 +3,9 @@ Professional Money Management & Trading Tool for MetaTrader 5
 
 ![Guardian Trader Pro Screenshot 1](Screenshot-GT218.jpg)  
 
+![Guardian Trader Pro Screenshot 1](Screenshot-GT21802.jpg) 
+
+
 ## 📋 Overview
 
 Guardian Trader Pro is an advanced trading expert for professional money management and trade execution in MetaTrader 5. This tool helps you manage your trades with precision by automatically calculating position sizes based on your risk percentage.
