@@ -2,13 +2,32 @@
 <div align="center">
 
 # Guardian Trader Pro
-### Professional Money Management & Trading Tool for MetaTrader 5
-![Guardian Trader Pro Screenshot 1](GTProV3-MC.png) 
-![Guardian Trader Pro Screenshot 1](Screenshot-GT218.jpg)  
-![Guardian Trader Pro Screenshot 1](Screenshot-GT21802.jpg) 
+### Professional Money Management & Trading Tool for MetaTrader 4 and 5!
+
+![Guardian Trader Pro Cover](https://github.com/Thirtynader/Guardian-Trader-Pro/blob/main/GTVII-Cover.webp)
 
 
 <br/>
+
+## 📢 Announcement
+
+> 🎉 **This Expert Advisor is now available to everyone completely free!**
+>
+> We've decided to open this project up to the community at no cost. Download the latest version using the link below and start using it right away.
+
+**[⬇️ Download the Latest Version](https://github.com/Thirtynader/Guardian-Trader-Pro/releases)**
+
+---
+
+## 📢 اطلاعیه
+
+> 🎉 **این اکسپرت اکنون به‌صورت کاملاً رایگان در اختیار همه قرار دارد!**
+>
+> تصمیم گرفتیم این پروژه را به‌صورت رایگان در اختیار جامعه کاربران قرار دهیم. برای دریافت آخرین نسخه، از لینک زیر استفاده کنید.
+
+**[⬇️ دانلود آخرین نسخه](https://github.com/Thirtynader/Guardian-Trader-Pro/releases)**
+
+---
 
 </div>
 
