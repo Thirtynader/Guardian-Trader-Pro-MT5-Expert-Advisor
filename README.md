@@ -226,16 +226,6 @@ Scale range: **0.6× → 2.0×** in steps of 0.1
 
 ---
 
-## 💰 Purchase & Support
-
-**Price: $50** *(one-time payment)*
-
-What's included:
-- ✅ Free lifetime support
-- ✅ Free updates forever
-- ✅ Installation assistance
-- ✅ Both Modern & Classic editions
-
 📧 **Email:** Thirtynader@gmail.com
 
 ---
@@ -396,15 +386,6 @@ MetaTrader 5 / MQL5 / Experts /
 
 ---
 
-## 💰 خرید و پشتیبانی
-
-**قیمت: ۵۰ دلار** *(یکبار پرداخت)*
-
-مزایا:
-- ✅ پشتیبانی رایگان مادام‌العمر
-- ✅ آپدیت‌های رایگان برای همیشه
-- ✅ نصب و راه‌اندازی
-- ✅ هر دو نسخه مدرن و کلاسیک
 
 📧 **ایمیل:** Thirtynader@gmail.com
 
